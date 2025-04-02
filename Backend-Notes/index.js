@@ -20,7 +20,6 @@ let notes = [
 ]
 
 app.use(express.json())
-app.use(requestLogger)
 app.use(express.static('dist'))
 
 app.get('/', (request, response) => {
